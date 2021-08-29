@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-import Expense from "./components/Expense";
+import Expense from "./components/Expenses/Expense";
 function App() {
   // this is the root component of a react app
   // only this component got rendered as a new html page, thus called "SPA"
