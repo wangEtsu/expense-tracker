@@ -1,8 +1,9 @@
 import ExpenseItem from './ExpenseItem'
+import Card from './Card';
 
 function Expense(props) {
     return (
-        <div>
+        <Card>
             <ExpenseItem
                 title={props.items[0].title}
                 amount={props.items[0].amount}
@@ -18,7 +19,7 @@ function Expense(props) {
                 amount={props.items[2].amount}
                 date={props.items[2].date}
             ></ExpenseItem>
-        </div>
+        </Card>
     )
 }
 
