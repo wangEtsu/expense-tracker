@@ -34,10 +34,15 @@ function App() {
     },
   ];
 
+  const addExpenseHandler = (expense) =>{
+    console.log("In App.js");
+    console.log(expense);
+  }
+
   return (
     <div className="App">
       {/* have to use uppercase, which indicates its a custom component, if not its an HTML element */}
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expense items={expenses}></Expense>
     </div>
   );
