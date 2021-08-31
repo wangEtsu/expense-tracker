@@ -1,6 +1,8 @@
 import "./App.css";
 
 import Expense from "./components/Expenses/Expense";
+import NewExpense from './components/NewExpense/NewExpense';
+
 function App() {
   // this is the root component of a react app
   // only this component got rendered as a new html page, thus called "SPA"
@@ -35,6 +37,7 @@ function App() {
   return (
     <div className="App">
       {/* have to use uppercase, which indicates its a custom component, if not its an HTML element */}
+      <NewExpense />
       <Expense items={expenses}></Expense>
     </div>
   );
