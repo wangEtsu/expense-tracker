@@ -16,6 +16,9 @@ JSX is more readble than HTML(Maybe), while in the React object it will be trans
 It register a certain props so that when it's value changed, react re-evaluate the component and thus reflect the change
 
 ### States are spearated on a component basis
+I don't know what that means lol
 
+### You Can't Skip Component When Passing Props
+To pass props From App.js => NewExpense => ExpenseForm, or vice versa, you SHOULD NOT SKIP ANY ONE OF THE COMPONENT IN BETWEEN
 
-
+### 
