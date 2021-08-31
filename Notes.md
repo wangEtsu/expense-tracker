@@ -11,3 +11,11 @@ Components have different levels, some are built into others. Usually the bottom
 ### JSX is Just Syntax Sugar
 You used to need to import react object to enable JSX syntax, its just we don't need to do it now in modern react project
 JSX is more readble than HTML(Maybe), while in the React object it will be transformed to normal HTML elements
+
+### First React Hook: useState
+It register a certain props so that when it's value changed, react re-evaluate the component and thus reflect the change
+
+### States are spearated on a component basis
+
+
+
