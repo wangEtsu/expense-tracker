@@ -4,22 +4,20 @@ import ExpenseFilter from './ExpenseFilter';
 import Card from '../UI/Card';
 
 function Expense(props) {
-
+    console.log("new list of items");
+    console.log(props.items);
     const [filteredYear, setFilteredYears] = useState('2020')
 
     // this is triggered by child component: ExpenseFilter.js
     const filterChangeHandler = (selectedYear) => {
-        console.log("Selected year is " + selectedYear);
         setFilteredYears(selectedYear);
     }
 
     return (
         <div>
-            <Card>
-                
+            <Card className='expenses'>
                 <ExpenseFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
-                {props.items.map(expense => <ExpenseItem title={expense.title} amount={expense.amount} date={expense.date} />)}
-                {[<Card />]}
+                {props.items.map(expense => (<ExpenseItem title={expense.title} amount={expense.amount} date={expense.date} />))}
             </Card>
         </div>
     )
