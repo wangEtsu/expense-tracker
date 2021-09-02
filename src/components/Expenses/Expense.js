@@ -10,6 +10,7 @@ function Expense(props) {
     // this is triggered by child component: ExpenseFilter.js
     const filterChangeHandler = (selectedYear) => {
         console.log("Selected year is " + selectedYear);
+        setFilteredYears(selectedYear);
     }
 
     return (
