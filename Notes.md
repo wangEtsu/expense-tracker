@@ -21,4 +21,9 @@ I don't know what that means lol
 ### You Can't Skip Component When Passing Props
 To pass props From App.js => NewExpense => ExpenseForm, or vice versa, you SHOULD NOT SKIP ANY ONE OF THE COMPONENT IN BETWEEN
 
-### 
+### Controlled Component
+A component that doesn't handle its own value, which are handled by its parent component: ExpenseFilter for example
+
+### Stateful component & Stateless (Presentational / dumb) component
+Stateful component: components that manage states (of others)
+Stateless component: components that don't manage states, jsut for presentational use
